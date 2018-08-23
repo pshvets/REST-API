@@ -37,19 +37,87 @@ http://localhost:8080/api/v1/users
 ```
 POST /createUser
 ```
-## Get User
+ Request Example
 ```
-GET /getUser/{id}
+{
+  "name": "your_name",
+  "email": "your_email"
+}
+```
+ Response Example
+
+```
+{
+  "id": "some_id",
+  "name": "your_name",
+  "email": "your_email"
+}
+```
+
+## Get User
+
+ Request Example
+```
+GET /api/v1/users/getUser/some_id
+```
+ Response Example
+
+```
+{
+  "id": "some_id",
+  "name": "your_name",
+  "email": "your_email"
+}
 ```
 ## Get All User
+
+ Request Example
 ```
-GET /getUsers
+GET /api/v1/users/getUsers
+```
+ Response Example
+
+```
+[
+  {
+    "id": "some_id",
+    "name": "your_name",
+    "email": "your_email"
+  },
+  {
+    "id": "some_id",
+    "name": "your_name",
+    "email": "your_email"
+  }
+]
 ```
 ## Delete User
+ Request Example
 ```
-DELETE /{id}/delete
+GET /api/v1/users/some_id/delete
+```
+ Response Example
+
+```
+200 OK
 ```
 ## Update User
 ```
 POST /{id}/update
+```
+ Request Example
+```
+{
+  "name": "your_new_name",
+  "email": "your_new_email"
+}
+```
+ Response Example
+
+```
+{
+  "id": "some_id",
+  "name": "your_new_name",
+  "email": "your_new_email"
+}
 ```

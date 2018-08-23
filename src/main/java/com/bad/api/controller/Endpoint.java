@@ -32,7 +32,7 @@ public class Endpoint {
         return userService.getUsers();
     }
 
-    @DeleteMapping
+    @GetMapping
     @RequestMapping("/{id}/delete")
     public void deleteUser (@PathVariable String id){
         userService.deleteUser(id);
