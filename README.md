@@ -5,7 +5,7 @@ This is an example of some REST API
 # Running in development
 
 ```
-git pull
+git clone git@github.com:pshvets/REST-API.git
 ./gradlew clean build bootRun
 ```
 
