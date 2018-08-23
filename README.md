@@ -5,8 +5,9 @@ This is an example of some REST API
 # Running in development
 
 ```
-git clone git@github.com:pshvets/REST-API.git
-./gradlew clean build bootRun
+git clone https://github.com/pshvets/REST-API.git
+cd REST-API/
+./gradlew bootRun
 ```
 
 # Base Path
