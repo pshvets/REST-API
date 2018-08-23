@@ -19,7 +19,6 @@ http://localhost:8080/api/v1/users
 ```
 POST /createUser
 ```
- Request Example
 ```
 {
   "name": "your_name",
@@ -38,7 +37,6 @@ POST /createUser
 
 ## Get User
 
- Request Example
 ```
 GET /api/v1/users/getUser/{some_id}
 ```
@@ -53,7 +51,6 @@ GET /api/v1/users/getUser/{some_id}
 ```
 ## Get All User
 
- Request Example
 ```
 GET /api/v1/users/getUsers
 ```
@@ -74,7 +71,6 @@ GET /api/v1/users/getUsers
 ]
 ```
 ## Delete User
- Request Example
 ```
 GET /api/v1/users/{some_id}/delete
 ```
@@ -87,7 +83,6 @@ GET /api/v1/users/{some_id}/delete
 ```
 POST /{some_id}/update
 ```
- Request Example
 ```
 {
   "name": "your_new_name",
