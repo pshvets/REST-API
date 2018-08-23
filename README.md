@@ -40,7 +40,7 @@ POST /createUser
 
  Request Example
 ```
-GET /api/v1/users/getUser/some_id
+GET /api/v1/users/getUser/{some_id}
 ```
  Response Example
 
@@ -76,7 +76,7 @@ GET /api/v1/users/getUsers
 ## Delete User
  Request Example
 ```
-GET /api/v1/users/some_id/delete
+GET /api/v1/users/{some_id}/delete
 ```
  Response Example
 
@@ -85,7 +85,7 @@ GET /api/v1/users/some_id/delete
 ```
 ## Update User
 ```
-POST /{id}/update
+POST /{some_id}/update
 ```
  Request Example
 ```
