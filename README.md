@@ -14,24 +14,6 @@ git pull
 http://localhost:8080/api/v1/users
 ```
 
-# Request Example
-```
-{
-  "name": "your_name",
-  "email": "your_email"
-}
-```
-
-# Response Example
-
-```
-{
-  "id": "some_id",
-  "name": "your_name",
-  "email": "your_email"
-}
-```
-
 # Methods
 ## Create User
 ```
