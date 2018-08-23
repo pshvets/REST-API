@@ -45,7 +45,7 @@ POST /createUser
 ## Get User
 
 ```
-GET /api/v1/users/getUser/{some_id}
+GET /getUser/{some_id}
 ```
  Response Example
 
@@ -56,10 +56,10 @@ GET /api/v1/users/getUser/{some_id}
   "email": "your_email"
 }
 ```
-## Get All User
+## Get List of Users
 
 ```
-GET /api/v1/users/getUsers
+GET /getUsers
 ```
  Response Example
 
@@ -79,7 +79,7 @@ GET /api/v1/users/getUsers
 ```
 ## Delete User
 ```
-GET /api/v1/users/{some_id}/delete
+GET /{some_id}/delete
 ```
  Response Example
 
