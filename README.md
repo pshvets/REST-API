@@ -10,6 +10,12 @@ cd REST-API/
 ./gradlew bootRun
 ```
 
+To check if up and running
+
+```curl -X GET http://localhost:8080/actuator/health```
+
+```{"status":"UP"}```
+
 # Base Path
 ```
 http://localhost:8080/api/v1/users
