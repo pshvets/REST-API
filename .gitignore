@@ -1,0 +1,14 @@
+.gradle
+*/build/
+/build/
+*/allure-results/
+/allure-results/
+*/out/
+
+!gradle/wrapper/gradle-wrapper.jar
+
+.idea
+*.iws
+*.iml
+*.ipr
+logs/
