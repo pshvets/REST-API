@@ -1,1 +1,2 @@
-# bad_api
+# Awesome REST API example
+

@@ -38,7 +38,7 @@ public class Endpoint {
         userService.deleteUser(id);
     }
 
-    @PutMapping
+    @PostMapping
     @RequestMapping("/{id}/update")
     public User updateUser (@PathVariable  String id, @RequestBody User user){
         return userService.updateUser(id, user);
