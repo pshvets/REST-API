@@ -1,13 +1,13 @@
 Feature: Get Users endp oint verification
 
 Scenario Outline: To create User
-		Given I provide "<UserName>" and "<Email>" to create user		
-		Then User should be created with "<UserName>" and "<Email>"
-		Examples:
+	Given I provide "<UserName>" and "<Email>" to create user		
+	Then User should be created with "<UserName>" and "<Email>"
+	Examples:
 		|	UserName	|	Email	|
 		|	Test1	|	Test1@api.com	|
 		|Test2|Test2@api.com|
-		
+	
 Scenario: To get user with id details
 	Given I provide ID to getUser endpoint
 	Then User details should be available in response

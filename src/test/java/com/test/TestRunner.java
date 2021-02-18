@@ -1,4 +1,4 @@
-package APIAutomation.com.api.test;
+package com.test;
 
 import org.junit.runner.RunWith;
 

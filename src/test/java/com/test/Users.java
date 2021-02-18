@@ -1,4 +1,4 @@
-package APIAutomation.com.api.test;
+package com.test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ public class Users {
 			request.body(requestParams.toString());
 			response = request.post("/createUser");
 			Assert.assertEquals(200, response.getStatusCode());
-			String bodyData = response.getBody().asPrettyString();
+			String bodyData = response.getBody().prettyPrint();
 			String userId = JsonPath.from(bodyData).get("id");
 			userIdList.add(userId);
 			
@@ -68,7 +68,7 @@ public class Users {
 			List<String> userIds = JsonPath.from(jsonString).get("id");
 			id = userIds.get(0);
 			response = request.get("/getUser/"+id);
-			//System.out.println("Request user id is "+response.getBody().asPrettyString());
+			System.out.println("Request user id is "+response.getBody().prettyPrint());
 		}
 
 		@Then("User details should be available in response")
